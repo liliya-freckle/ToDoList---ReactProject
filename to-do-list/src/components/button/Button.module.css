@@ -1,0 +1,10 @@
+.addButton {
+    background-color: antiquewhite;
+    border-radius: 5px;
+
+}
+
+button {
+    margin: 8px;
+    cursor: pointer;
+}
