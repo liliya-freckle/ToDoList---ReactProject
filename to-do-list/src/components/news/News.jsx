@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './News.module.css'
 
 const News = (props) => {
 
@@ -8,7 +9,7 @@ const News = (props) => {
         <ul>
             {
                 news.map((item) =>
-                    <Link to={`/news/${item.id}`}>Новость {item.id}</Link>)
+                    <Link to={`/news/${item.id}`} className={styles.news}>Новость {item.id}</Link>)
             }
 
 
