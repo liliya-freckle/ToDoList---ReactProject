@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AddButton from '../button/AddButton'
 import ListItem from './ListItem'
 import styles from './Content.module.css'
@@ -27,12 +27,20 @@ const Content = () => {
         color: "orange",
     }]
 
+    const [item, setItems] = useState([])
+
+    const deleteItem = (id) => {
+        const updateList = items.filter((item)=> item.id !== id)
+        setItems(updateList)
+        
+    }
+
     return (
         <main className={styles.content}>
             <ul>
                 {
                     items.map((item) =>
-                        <ListItem key={item.id} name={item.name} color={item.color} />
+                        <ListItem key={item.id} name={item.name} color={item.color} deleteItem={()=> deleteItem(item.id)} />
                     )
                 }
             </ul>

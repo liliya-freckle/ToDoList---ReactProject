@@ -14,7 +14,10 @@ const ListItem = (props) => {
             <label style={checked
                 ? { textDecorationLine: "line-through" }
                 : { textDecorationLine: "none" }}>{name}</label>
-            <button>Delete</button>
+            <button 
+                onClick={() => props.deleteItem(props.id)}>
+                Delete
+            </button>
         </div>
     )
 }
