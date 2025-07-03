@@ -10,7 +10,11 @@ const ListItem = (props) => {
 
     return (
         <div className='item'>
-            <input type='checkbox' onClick={handleCheckedState}></input>
+            <input type='checkbox'
+            onChange={handleCheckedState}
+            checked={checked}
+            >
+            </input>
             <label style={checked
                 ? { textDecorationLine: "line-through" }
                 : { textDecorationLine: "none" }}>{name}</label>
