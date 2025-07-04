@@ -1,20 +1,20 @@
 [{
-        "id": "1",
+        "id": 1,
         "name": "Check the lesson",
         "isChecked": false,
         "color": "red"
     }, {
-        "id": "2",
+        "id": 2,
         "name": "To do hometask",
         "isChecked": false,
         "color": "blue"
     }, {
-        "id": "3",
+        "id": 3,
         "name": "To have time outside",
         "isChecked": false,
         "color": "green"
     }, {
-        "id": "4",
+        "id": 4,
         "name": "To buy some food",
         "isChecked": false,
         "color": "orange"
